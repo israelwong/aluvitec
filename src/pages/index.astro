@@ -1,16 +1,24 @@
 ---
+import Layout from "../components/Layout.astro";
+
+
+import Whatsapp from "../components/Whatsapp";
+import Hero from "../components/Hero.astro"
+const lista = ['israel','learsi','Shirel']
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title = 'Bienvenido'>
+
+		<h1 class="text-7xl text-purple-600">Principal</h1>
+		<Whatsapp props={{msg:'hello world again'}} client:load/>
+		<Hero/>
+		
+	
+		<p>listado:</p>
+		<ul>
+			{
+				lista.map(item => <li>{item}</li>)
+			}
+		</ul>
+</Layout>

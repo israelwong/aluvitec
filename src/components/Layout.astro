@@ -1,0 +1,36 @@
+---
+interface Props {
+  title?: string;
+  descriptions?: string;
+}
+
+const {
+    title, 
+    descriptions} = Astro.props
+
+
+import { ViewTransitions } from "astro:transitions";
+
+import Menu from "../components/menu";
+---
+
+<!doctype html>
+<html lang="es" class="dark:bg-black text-gray-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descriptions" content={descriptions}/>
+    <title>Aluvitec | {title} </title>
+  </head>
+  <body>
+    <ViewTransitions />
+
+    <Menu />
+    <hr />
+    <main class="mx-auto container">
+        
+        <slot />
+</main>
+
+  </body>
+</html>
