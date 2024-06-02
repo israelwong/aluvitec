@@ -10,7 +10,7 @@ const {
     title, 
     descriptions} = Astro.props
 
-import Menu from "../components/Menu.astro";
+import Menu from "./Menu.astro"
 ---
 
 <!doctype html>
@@ -20,16 +20,12 @@ import Menu from "../components/Menu.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="descriptions" content={descriptions}/>
     <title>Aluvitec | {title} </title>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script is:inline data-astro-rerun src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
+  
     <ViewTransitions />
 
   </head>
   <body class="" >
-    <Menu client:load />
+    <Menu/>
     <main class="mx-auto container">
     <slot />
     </main>
