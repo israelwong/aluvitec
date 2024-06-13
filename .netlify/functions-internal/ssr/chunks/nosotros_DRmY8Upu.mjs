@@ -1,5 +1,5 @@
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/afiliacion_DOp6BPZI.mjs');
+const page = () => import('./pages/nosotros_DuxAJlOj.mjs');
 
 export { page };

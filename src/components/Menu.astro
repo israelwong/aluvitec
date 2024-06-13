@@ -1,6 +1,14 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+
+const active ='px-2 py-2 mt-2 text-base font-normal text-white'
+const noactive ='px-2 py-2 mt-2 text-base font-normal text-gray-500 transition-all duration-200 hover:text-white'
+---
+
 <script is:inline data-astro-rerun src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-<div class="antialiased text-gray-200 bg-gray-900">
+<div class="antialiased text-gray-200 bg-zinc-950">
   <div class="w-full text-gray-100">
 
     <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -9,8 +17,8 @@
         <a href="./">
             <img src='./images/logo/logo_vector_blanco.svg' alt="aluvitec" width={70} />
         </a>
-        <span class="md:ps-3 pt-2">
-            <h1 class="md:text-2xl md:items-center uppercase text-start font-bold ">
+        <span class="md:ps-3 pt-1">
+            <h1 class="md:text-2xl md:items-center uppercase text-start font-bold text-zinc-400 ">
               Aluminio y vidrio Tecámac
             </h1>
             <p class="md:text-sm text-xs text-gray-400 uppercase">Distribuidores mayoreo menudeo</p>
@@ -23,13 +31,20 @@
         </button>
       </div>
 
-      <nav :class="{'flex': !open, 'hidden': open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-        <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./">Principal</a>
-        <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./nosotros">Nosotros</a>
-        <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./productos">Productos</a>
-        <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./afiliacion">Afiliación</a>
-        <a class="px-2 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./contacto">Contacto</a>
+      <nav :class="{'flex': !open, 'hidden': open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row pe-4">
+        <a class={currentPath === "" ? active  : noactive} href="./">Principal</a>
+        <a class={currentPath === "nosotros" ? active : noactive} href="./nosotros">Nosotros</a>
+        <a class={currentPath === "productos" ? active : noactive} href="./productos">Productos</a>
+        <a class={currentPath === "contacto" ? active : noactive} href="./contacto">Contacto</a>
       </nav>
+
+      <div class="relative inline-flex items-center justify-center group hidden md:block">
+      <div class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
+      <a href="./" title="" class="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button">Afiliate</a>
+      </div>
     </div>
+
   </div>
 </div>
+
+

@@ -1,5 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import '@fontsource/bebas-neue';
+import '../style.css'
 
 interface Props {
   title?: string;
@@ -11,23 +13,28 @@ const {
     descriptions} = Astro.props
 
 import Menu from "./Menu.astro"
+import Footer from './Footer.astro';
 ---
 
 <!doctype html>
-<html lang="es" class="bg-black text-gray-300" >
+<html lang="es" class="bg-gradient-to-b from-black to-zinc-950  text-gray-300" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
     <meta name="descriptions" content={descriptions}/>
     <title>Aluvitec | {title} </title>
+
+    <script is:inline data-astro-rerun src="https://kit.fontawesome.com/74d1405387.js" crossorigin="anonymous"></script>
   
     <ViewTransitions />
 
   </head>
-  <body class="" >
+  <body>
     <Menu/>
-    <main class="mx-auto container">
-    <slot />
+    <main class="mx-auto ">
+      <slot />
     </main>
+    <Footer/>
   </body>
 </html>
