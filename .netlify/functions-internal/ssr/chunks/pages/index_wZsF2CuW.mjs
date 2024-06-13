@@ -100,7 +100,7 @@ Soluciones integrales a la medida
 Soluciones de abasto
 </h3> <p class="text-zinc-500 text-lg md:text-5xl">
 Si no lo tenemos, te lo conseguimos lo más pronto posible
-</p> </div> </div> <div class="text-center mb-5py-20md:pb-10 block md:hidden"> <!-- //! arrow --> <i class="fas fa-angle-down text-3xl animate-pulse text-zinc-600"></i> </div> <!-- //? --> <!-- //? --> <!-- //? --> <!-- //? --> <div class="mb-0 md:flex md:mb-10"> <div class="border-2 border-solid border-zinc-500 p-2"> <img src="./images/img_logistica.png" alt="Soluciones en logistica" class="md:max-w-max"> </div> <div class="py-5 md:px-5 text-center md:text-left"> <h3 class="font-Bebas-Neue text-3xl md:text-8xl">
+</p> </div> </div> <div class="text-center mb-5 md:pb-10 block md:hidden"> <!-- //! arrow --> <i class="fas fa-angle-down text-3xl animate-pulse text-zinc-600"></i> </div> <!-- //? --> <!-- //? --> <!-- //? --> <!-- //? --> <div class="mb-0 md:flex md:mb-10"> <div class="border-2 border-solid border-zinc-500 p-2"> <img src="./images/img_logistica.png" alt="Soluciones en logistica" class="md:max-w-max"> </div> <div class="py-5 md:px-5 text-center md:text-left"> <h3 class="font-Bebas-Neue text-3xl md:text-8xl">
 Logistica impecable
 </h3> <p class="text-zinc-500 text-lg md:text-5xl">
 Planeamos la entrega de tu pedido bajo ruta programada o exprés
