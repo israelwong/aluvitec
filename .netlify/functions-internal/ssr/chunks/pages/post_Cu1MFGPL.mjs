@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead } from '../astro_CLk474lC.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from './404_BvsKi5Gj.mjs';
+import { $ as $$Layout } from './404_Cmq0LAK9.mjs';
 
 const $$Post = createComponent(async ($$result, $$props, $$slots) => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");

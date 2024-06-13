@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, f as renderComponent } from '../astro_CLk474lC.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from './404_BvsKi5Gj.mjs';
+import { $ as $$Layout } from './404_Cmq0LAK9.mjs';
 import { Fade } from 'react-awesome-reveal';
 import 'clsx';
 

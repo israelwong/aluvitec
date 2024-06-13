@@ -2,8 +2,8 @@
 import { c as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead } from '../astro_CLk474lC.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from './404_BvsKi5Gj.mjs';
-import { $ as $$LogosProveedores } from './index_D7P_PA4d.mjs';
+import { $ as $$Layout } from './404_Cmq0LAK9.mjs';
+import { $ as $$LogosProveedores } from './index_QEO37Vur.mjs';
 
 const $$Nosotros = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Quienes somos", "descriptions": "Somos lideres en la distribuci\xF3n de aluminio, vidrio y herraje de la m\xE1s alta calidad." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container mx-auto py-10"> <div class="text-center pb-5 md:pb-5 "> <h3 class="
