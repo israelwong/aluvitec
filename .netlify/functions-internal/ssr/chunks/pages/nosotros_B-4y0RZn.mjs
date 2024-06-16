@@ -3,7 +3,7 @@ import { c as createComponent, r as renderTemplate, f as renderComponent, m as m
 import 'kleur/colors';
 import 'html-escaper';
 import { $ as $$Layout } from './404_CyfkxRdu.mjs';
-import { $ as $$LogosProveedores } from './index_BP-jGL7L.mjs';
+import { $ as $$LogosProveedores } from './index_Ck9Wrv8M.mjs';
 
 const $$Nosotros = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Quienes somos", "descriptions": "Somos lideres en la distribuci\xF3n de aluminio, vidrio y herraje de la m\xE1s alta calidad." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container mx-auto py-10"> <div class="text-center pb-5 md:pb-5 "> <h3 class="
