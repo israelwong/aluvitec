@@ -4,6 +4,15 @@ const currentPath = pathname.slice(1); // remove the first "/"
 
 const active ='px-2 py-2 mt-2 text-base font-normal text-white'
 const noactive ='px-2 py-2 mt-2 text-base font-normal text-gray-500 transition-all duration-200 hover:text-white'
+
+interface Props{
+  path:string;
+}
+
+const {
+  path='./'
+} = Astro.props
+
 ---
 
 <script is:inline data-astro-rerun src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -15,7 +24,7 @@ const noactive ='px-2 py-2 mt-2 text-base font-normal text-gray-500 transition-a
 
       <div class="flex flex-row items-center justify-between p-3">
         <a href="./">
-            <img src='./images/logo/logo_vector_blanco.svg' alt="aluvitec" width={70} />
+            <img src=`${path}images/logo/logo_vector_blanco.svg` alt="aluvitec" width={70} />
         </a>
         <span class="md:ps-3 pt-1">
             <h1 class="md:text-2xl md:items-center uppercase text-start font-bold text-zinc-400 ">
@@ -32,15 +41,15 @@ const noactive ='px-2 py-2 mt-2 text-base font-normal text-gray-500 transition-a
       </div>
 
       <nav :class="{'flex': !open, 'hidden': open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row pe-4">
-        <a class={currentPath === "" ? active  : noactive} href="./">Principal</a>
-        <a class={currentPath === "nosotros" ? active : noactive} href="./nosotros">Nosotros</a>
-        <a class={currentPath === "productos" ? active : noactive} href="./productos">Productos</a>
-        <a class={currentPath === "contacto" ? active : noactive} href="./contacto">Contacto</a>
+        <a class={currentPath === "" ? active  : noactive} href=`${path}`>Principal</a>
+        <a class={currentPath === "nosotros" ? active : noactive} href=`${path}nosotros`>Nosotros</a>
+        <a class={currentPath === "productos" ? active : noactive} href=`${path}productos`>Productos</a>
+        <a class={currentPath === "contacto" ? active : noactive} href=`${path}contacto`>Contacto</a>
       </nav>
 
       <div class="relative inline-flex items-center justify-center group hidden md:block">
       <div class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-      <a href="./" title="" class="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button">Afiliate</a>
+      <a href=`${path}afiliate` title="" class="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button">Afiliate</a>
       </div>
     </div>
 

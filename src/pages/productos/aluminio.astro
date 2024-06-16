@@ -1,0 +1,115 @@
+---
+import Layout from '../../components/Layout.astro'
+import BtnMostrarProductos from '../../components/btn_mostrar_productos.astro'
+import BtnCotizar from '../../components/btn_cotizar.astro'
+import { Fade, Zoom } from "react-awesome-reveal";
+---
+
+<Layout path="../" title='Perfiles de aluminio' descriptions='aluminio línea nacional ventajas fijas de 2", aluminio línea nacional 3", aluminio línea nacional ventana corrediza 1 1/2, aluminio línea nacional ventana corrediza 2, aluminio línea nacional ventana corrediza 3", aluminio línea nacional baños, aluminio línea nacional batientes, aluminio línea nacional ventila de proyección, aluminio línea nacional vitrinas, aluminio línea nacional angulos y tees, aluminio línea nacional duelas, aluminio línea nacional mosquiteros, aluminio línea nacional molduras, aluminio línea nacional louver, aluminio línea nacional tubos cuadrados, aluminio línea nacional tubos rectangulares, aluminio línea nacional canal para domo, línea española serie 1400 abatible, línea española serie 3500 corredizo, línea española serie 4600 corredizo'>
+
+    <div class="container mx-auto py-10">
+
+        <div class="md:w-3/4 mx-auto px-10">
+
+            <div class="pb-4 text-center font-Bebas-Neue ">
+
+                <h1 class="
+                text-6xl 
+                text-yellow-500 
+                md:text-6xl 
+                ">Perfiles de aluminio</h1>
+
+                <p class="text-red-400 animate-pulse text-2xl">
+                Tenemos venta al corte</p>
+
+            </div>
+
+            <Zoom client:visible>
+            <BtnMostrarProductos/>
+            </Zoom>
+
+            <Fade client:visible>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <div class="">
+                    <img class="object-scale-down border border-zinc-500 p-3" src="../images/producto/perfil-aluminio-espaniol.webp">
+                </div>
+                <div>
+                    <h3 class="font-Bebas-Neue text-5xl mb-2 text-zinc-400">
+                        Línea nacional</h3>
+                        
+                        <Fade client:visible>
+                            <ul class="list-disc pl-5 text-xl">
+                                <li>Ventajas fijas de 2" y 3"</li>
+                                <li>Ventana corrediza 1 1/2, 2" y 3"</li>
+                                <li>Baños</li>
+                                <li>Batientes</li>
+                                <li>Ventila de proyección</li>
+                                <li>Vitrinas</li>
+                                <li>Angulos y tees</li>
+                                <li>Duelas</li>
+                                <li>Mosquiteros</li>
+                                <li>Molduras</li>
+                                <li>Louver</li>
+                                <li>Tubos cuadrados</li>
+                                <li>Tubos rectangulares</li>
+                                <li>Canal para domo</li>
+                            </ul>
+                        </Fade>
+                </div>
+            </div>
+            </Fade>
+
+            <Fade client:visible>
+                <BtnCotizar title='Cotiza hoy mismo la línea nacional' message='Hola! Estoy interesado en cotizar perfiles de aluminio de la línea nacional'/>
+            </Fade>
+            
+            <div class="text-center animate-pulse pt-5 pb-10">
+                <i class="text-2xl fas fa-arrow-down"></i>
+            </div>
+
+            <Fade client:visible>
+            <div class="grid md:grid-cols-2 gap-4 mb-5">
+                <div class="">
+                    <img class="object-contain border border-zinc-500 p-3" src="../images/producto/perfil-aluminio-nacional.webp">
+                </div>
+                <div>
+                    <h3 class="font-Bebas-Neue text-5xl mb-2 text-zinc-400">
+                        Línea española</h3>
+                    
+                    <Fade client:visible>
+                        <ul class="list-disc pl-5 text-xl mb-5">
+                            <li>Serie 1400 abatible</li>
+                            <li>Serie 3500 corredizo</li>
+                            <li>Serie 4600 corredizo</li>
+                        </ul>
+                    </Fade>
+
+                    <h5 class="font-Bebas-Neue text-2xl animate-pulse text-yellow-500">Colores disponibles</h5>
+                    <Fade client:visible>
+                        <ul class="list-disc pl-5 text-xl">
+                            <li>Blanco</li>
+                            <li>Natural</li>
+                            <li>Duro e</li>
+                            <li>Electro</li>
+                            <li>Nogal</li>
+                            <li>Inox</li>
+                        </ul>
+                    </Fade>
+                </div>
+            </div>
+            </Fade>
+
+            <Fade client:visible>                
+                <BtnCotizar title='Cotiza hoy mismo la línea española' message='Hola! Estoy interesado en cotizar perfiles de aluminio de la línea española'/>
+            </Fade>
+
+            <Zoom client:visible>
+                <BtnMostrarProductos/>
+            </Zoom>
+
+
+        </div>
+    </div>
+</Layout>
+
+

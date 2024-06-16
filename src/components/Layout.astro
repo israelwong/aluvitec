@@ -1,19 +1,25 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import '@fontsource/bebas-neue';
-import '../style.css'
 
 interface Props {
   title?: string;
   descriptions?: string;
+  footer?: string;
+  path?:string;
 }
 
 const {
     title, 
-    descriptions} = Astro.props
+    descriptions,
+    footer='global',
+    path='./'
+  } = Astro.props
+
 
 import Menu from "./Menu.astro"
-import Footer from './Footer.astro';
+import FooterGlobal from './FooterGlobal.astro';
+import FooterBasico from './FooterBasico.astro';
 ---
 
 <!doctype html>
@@ -30,11 +36,19 @@ import Footer from './Footer.astro';
     <ViewTransitions />
 
   </head>
+
+  
   <body>
-    <Menu/>
-    <main class="mx-auto ">
-      <slot />
-    </main>
-    <Footer/>
+    <Menu path={path} />
+
+        <main class="mx-auto">
+          <slot />
+        </main>
+
+  {footer=='global'
+  ?<FooterGlobal path={path}/>
+  :<FooterBasico/>
+  }    
+    
   </body>
 </html>
