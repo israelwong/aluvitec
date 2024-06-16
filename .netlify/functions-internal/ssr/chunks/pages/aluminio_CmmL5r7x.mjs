@@ -2,8 +2,8 @@
 import { c as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead } from '../astro_CglybI6J.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from './404_CyfkxRdu.mjs';
-import { $ as $$BtnMostrarProductos, a as $$BtnCotizar } from './adicionales_DUyaU4Ff.mjs';
+import { $ as $$Layout } from './404_CDT6GPDK.mjs';
+import { a as $$BtnMostrarProductos, $ as $$BtnCotizar } from './adicionales_D826saj9.mjs';
 import { Zoom, Fade } from 'react-awesome-reveal';
 
 const $$Aluminio = createComponent(($$result, $$props, $$slots) => {

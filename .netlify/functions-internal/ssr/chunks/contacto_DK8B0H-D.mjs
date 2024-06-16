@@ -1,5 +1,5 @@
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/cristal-tipos_TMaLhs00.mjs');
+const page = () => import('./pages/contacto_D4NwD1zU.mjs');
 
 export { page };

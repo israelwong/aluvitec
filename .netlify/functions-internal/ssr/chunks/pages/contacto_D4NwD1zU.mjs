@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead } from '../astro_CglybI6J.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from './404_CyfkxRdu.mjs';
+import { $ as $$Layout } from './404_CDT6GPDK.mjs';
 
 const $$Contacto = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contactanos", "descriptions": "Contactanos hoy mismo", "footer": "v2" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container mx-auto"> <h1 class="

@@ -45,11 +45,14 @@ const {
         <a class={currentPath === "nosotros" ? active : noactive} href=`${path}nosotros`>Nosotros</a>
         <a class={currentPath === "productos" ? active : noactive} href=`${path}productos`>Productos</a>
         <a class={currentPath === "contacto" ? active : noactive} href=`${path}contacto`>Contacto</a>
+
+        <a class=`block md:hidden ${currentPath === "afiliacion" ? active : noactive}` href=`${path}afiliacion`>Afiliate</a>
+
       </nav>
 
-      <div class="relative inline-flex items-center justify-center group hidden md:block">
+      <div class="relative items-center justify-center group hidden md:block">
       <div class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
-      <a href=`${path}afiliate` title="" class="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button">Afiliate</a>
+      <a href=`${path}afiliacion` title="" class="relative inline-flex items-center justify-center w-full px-6 py-2 text-base font-normal text-white bg-black border border-transparent rounded-full" role="button">Afiliate</a>
       </div>
     </div>
 

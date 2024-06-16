@@ -2,8 +2,8 @@
 import { c as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead } from '../astro_CglybI6J.mjs';
 import 'kleur/colors';
 import 'html-escaper';
-import { $ as $$Layout } from './404_CyfkxRdu.mjs';
-import { $ as $$BtnMostrarProductos, a as $$BtnCotizar } from './adicionales_DUyaU4Ff.mjs';
+import { $ as $$Layout } from './404_CDT6GPDK.mjs';
+import { a as $$BtnMostrarProductos, $ as $$BtnCotizar } from './adicionales_D826saj9.mjs';
 
 const $$CristalTipos = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "path": "../", "path": "../", "title": "Tipos de cristal", "descriptions": "cristal flotado, cristal reflectivo, cristal esmerilado, cristal espejo, cristal laminado" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container mx-auto py-10"> <div class="md:w-3/4 mx-auto px-10"> <div class="pb-4 text-center"> <h1 class="
