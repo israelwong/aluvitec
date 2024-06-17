@@ -5,7 +5,7 @@ import 'html-escaper';
 import { $ as $$Layout } from './404_CDT6GPDK.mjs';
 import { Fade } from 'react-awesome-reveal';
 import 'clsx';
-import { $ as $$LogosProveedores } from './afiliacion_Buhq_aao.mjs';
+import { $ as $$LogosProveedores } from './afiliacion_CHOCpnIy.mjs';
 
 const $$Index$1 = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "path": "../", "title": "Productos", "descriptions": "Cristal, Procesos en cristal, Herrajes, Acr\xEDlicos, Policarbonato, Pl\xE1sticos para ba\xF1o, Domos" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container mx-auto py-10 "> <h1 class="text-center font-Bebas-Neue text-4xl md:text-6xl py-5 text-yellow-700">Nuestros Productos</h1> <div class="p-5 md:p-0 md:w-1/3 grid mx-auto"> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 0, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700  hover:animate-pulse" href="./productos/aluminio"> <div class="text-center"> <i class="text-4xl fab fa-gg"></i> </div> <h1 class="text-left col-span-2 text-lg pt-1">

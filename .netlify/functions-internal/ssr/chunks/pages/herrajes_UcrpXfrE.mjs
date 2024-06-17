@@ -3,7 +3,7 @@ import { c as createComponent, r as renderTemplate, f as renderComponent, m as m
 import 'kleur/colors';
 import 'html-escaper';
 import { $ as $$Layout } from './404_CDT6GPDK.mjs';
-import { a as $$BtnMostrarProductos, $ as $$BtnCotizar } from './adicionales_D826saj9.mjs';
+import { a as $$BtnMostrarProductos, $ as $$BtnCotizar } from './adicionales_dTkxsO09.mjs';
 import { jsx, Fragment, jsxs } from 'react/jsx-runtime';
 import 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';

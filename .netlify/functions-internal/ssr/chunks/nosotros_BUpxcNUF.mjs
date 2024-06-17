@@ -1,5 +1,5 @@
 export { renderers } from '../renderers.mjs';
 
-const page = () => import('./pages/herrajes_BpV910Gg.mjs');
+const page = () => import('./pages/nosotros_wUZfiifx.mjs');
 
 export { page };

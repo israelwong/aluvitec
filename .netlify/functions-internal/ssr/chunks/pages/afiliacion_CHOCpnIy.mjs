@@ -4,7 +4,7 @@ import 'kleur/colors';
 import 'html-escaper';
 import { $ as $$Layout } from './404_CDT6GPDK.mjs';
 import 'clsx';
-import { $ as $$BtnCotizar } from './adicionales_D826saj9.mjs';
+import { $ as $$BtnCotizar } from './adicionales_dTkxsO09.mjs';
 
 const $$LogosProveedores = createComponent(($$result, $$props, $$slots) => {
   const logos = [

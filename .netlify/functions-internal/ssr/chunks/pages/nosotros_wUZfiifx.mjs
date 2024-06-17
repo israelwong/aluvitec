@@ -3,7 +3,7 @@ import { c as createComponent, r as renderTemplate, f as renderComponent, m as m
 import 'kleur/colors';
 import 'html-escaper';
 import { $ as $$Layout } from './404_CDT6GPDK.mjs';
-import { $ as $$LogosProveedores } from './afiliacion_Buhq_aao.mjs';
+import { $ as $$LogosProveedores } from './afiliacion_CHOCpnIy.mjs';
 import { Fade, Zoom } from 'react-awesome-reveal';
 
 const $$Nosotros = createComponent(($$result, $$props, $$slots) => {
