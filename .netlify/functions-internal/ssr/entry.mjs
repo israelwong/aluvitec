@@ -1,20 +1,21 @@
 import { renderers } from './renderers.mjs';
-import { manifest } from './manifest_XFw9LGRm.mjs';
+import { manifest } from './manifest_WKV8bBYd.mjs';
 import * as serverEntrypointModule from '@astrojs/netlify/ssr-function.js';
 import { onRequest } from './_noop-middleware.mjs';
 
 const _page0 = () => import('./chunks/generic_3yOsuBFJ.mjs');
-const _page1 = () => import('./chunks/404_DkKQQ5qs.mjs');
-const _page2 = () => import('./chunks/afiliacion_NGQAe_o6.mjs');
-const _page3 = () => import('./chunks/contacto_DK8B0H-D.mjs');
-const _page4 = () => import('./chunks/nosotros_BUpxcNUF.mjs');
-const _page5 = () => import('./chunks/adicionales_Bi-5zoMe.mjs');
-const _page6 = () => import('./chunks/aluminio_CIJDdEtX.mjs');
-const _page7 = () => import('./chunks/cristal-procesos_Bmb3Re9f.mjs');
-const _page8 = () => import('./chunks/cristal-tipos_9fBw3bVU.mjs');
-const _page9 = () => import('./chunks/herrajes_Cu3vpkeZ.mjs');
-const _page10 = () => import('./chunks/index_C8hT9zrn.mjs');
-const _page11 = () => import('./chunks/index_XDcw9gw0.mjs');
+const _page1 = () => import('./chunks/404_ncALsj6Q.mjs');
+const _page2 = () => import('./chunks/afiliacion_Swe_AB9H.mjs');
+const _page3 = () => import('./chunks/contacto_Rf4ULZUp.mjs');
+const _page4 = () => import('./chunks/nosotros_Dr1KmHqv.mjs');
+const _page5 = () => import('./chunks/adicionales_BoYMMA9h.mjs');
+const _page6 = () => import('./chunks/aluminio_DPEOCF38.mjs');
+const _page7 = () => import('./chunks/cristal-procesos_qNb8skYR.mjs');
+const _page8 = () => import('./chunks/cristal-tipos_CUUAi26F.mjs');
+const _page9 = () => import('./chunks/herrajes-aluminio_BP028aLT.mjs');
+const _page10 = () => import('./chunks/herrajes-cristal_DYxXT3dF.mjs');
+const _page11 = () => import('./chunks/index_BBSRB584.mjs');
+const _page12 = () => import('./chunks/index_DC29bgF8.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/404.astro", _page1],
@@ -25,9 +26,10 @@ const pageMap = new Map([
     ["src/pages/productos/aluminio.astro", _page6],
     ["src/pages/productos/cristal-procesos.astro", _page7],
     ["src/pages/productos/cristal-tipos.astro", _page8],
-    ["src/pages/productos/herrajes.astro", _page9],
-    ["src/pages/productos/index.astro", _page10],
-    ["src/pages/index.astro", _page11]
+    ["src/pages/productos/herrajes-aluminio.astro", _page9],
+    ["src/pages/productos/herrajes-cristal.astro", _page10],
+    ["src/pages/productos/index.astro", _page11],
+    ["src/pages/index.astro", _page12]
 ]);
 
 const _manifest = Object.assign(manifest, {
@@ -36,7 +38,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "6a874156-7bbf-4747-ac2d-333f82772411"
+    "middlewareSecret": "fe14a403-3f99-43f2-8b09-cef57b8bb6b5"
 };
 const _exports = serverEntrypointModule.createExports(_manifest, _args);
 const __astrojsSsrVirtualEntry = _exports.default;
