@@ -1,0 +1,48 @@
+---
+import Layout from '../../components/Layout.astro'
+import BtnMostrarProductos from '../../components/btn_mostrar_productos.astro'
+import BtnCotizar from '../../components/btn_cotizar.astro'
+// import Carrusel from '../../components/Carrusel.jsx'
+
+const cantidad = 20
+let imagenes = []
+for (let i = 1; i <= cantidad; i++) {
+    let img = `../images/producto/herrajes-cristal/${i}.jpg`
+    imagenes.push(img)
+}
+---
+
+<Layout path="../" title='Perfiles de aluminio' descriptions='Herrajes para cristal templado, Herrajes para cancelería de aluminio nacional, Herrajes para cancelería de aluminio nacional española'>
+    <div class=" mx-auto py-10">       
+
+        <div class="text-center">
+
+            <div class="container mx-auto">
+                <h1 class="font-Bebas-Neue text-4xl md:text-6xl pb-3 text-yellow-700">
+                    Herrajes Cristal Templado
+                </h1>
+                <BtnMostrarProductos/>           
+                
+            <!-- <Carrusel client:load/> -->
+
+            <div class="grid md:grid-cols-4 md:p-2 grid-cols-2 gap-3 ">
+                {imagenes.map((item) => (
+                    <img src={item}>
+                    ))}
+            </div>
+                
+            </div>
+            
+
+            <div class="container mx-auto">
+
+                <BtnCotizar title='Cotizar herrajes de cristal templado' message='Hola! Me interesa cotizar herrajes de cristal templado'/>
+                
+                <BtnMostrarProductos/>
+            </div>
+
+        </div>
+    </div>
+</Layout>
+
+

@@ -1,0 +1,33 @@
+/* empty css                                      */
+import { c as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_m02BKbkd.mjs';
+import 'kleur/colors';
+import 'html-escaper';
+import { $ as $$Layout } from '../chunks/Layout_CrLGOSeF.mjs';
+import { Fade } from 'react-awesome-reveal';
+export { renderers } from '../renderers.mjs';
+
+const $$Index = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "path": "../", "title": "Productos", "descriptions": "Cristal, Procesos en cristal, Herrajes, Acr\xEDlicos, Policarbonato, Pl\xE1sticos para ba\xF1o, Domos" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="container mx-auto py-10 "> <h1 class="text-center font-Bebas-Neue text-4xl md:text-6xl py-5 text-yellow-700">Nuestros Productos</h1> <div class="p-5 md:p-0 md:w-1/3 grid mx-auto"> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 0, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700  hover:animate-pulse" href="./productos/aluminio"> <div class="text-center"> <i class="text-4xl fab fa-gg"></i> </div> <h1 class="text-left col-span-2 text-lg pt-1">
+Perfiles de aluminio</h1> <p class="pt-2 text-right"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 mx-auto animate-pulse"> <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path> </svg> </p> </a> ` })} <!-- //? --> <!-- //? --> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 200, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 md:grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700 hover:animate-pulse" href="./productos/cristal-tipos"> <div class="text-center"> <i class="text-3xl fas fa-layer-group"></i> </div> <h1 class="text-left col-span-2 text-lg pt-1">
+Tipos de cristal
+</h1> <p class="pt-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 mx-auto animate-pulse"> <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path> </svg> </p> </a> ` })} <!-- //? --> <!-- //? --> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 400, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700  hover:animate-pulse" href="./productos/cristal-procesos"> <div class="text-center"> <i class="text-3xl fas fa-drafting-compass"></i> </div> <h1 class="text-left col-span-2 text-lg pt-1">
+Procesos en cristal</h1> <p class="pt-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 mx-auto animate-pulse"> <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path> </svg> </p> </a> ` })} <!-- //? --> <!-- //? --> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 600, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700  hover:animate-pulse" href="./productos/herrajes-cristal"> <div class="text-center"> <i class="text-3xl fab fa-windows"></i> <!-- <i class="text-3xl fab fa-hive"></i>    --> </div> <h1 class="text-left col-span-2 text-lg pt-1">
+Herrajes cristal templado</h1> <p class="pt-2 text-right"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 mx-auto animate-pulse"> <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path> </svg> </p> </a> ` })} <!-- //? --> <!-- //? --> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 600, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700  hover:animate-pulse" href="./productos/herrajes-aluminio"> <div class="text-center"> <i class="text-3xl fab fa-hive"></i> </div> <h1 class="text-left col-span-2 text-lg pt-1">
+Herrajes aluminio</h1> <p class="pt-2 text-right"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 mx-auto animate-pulse"> <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path> </svg> </p> </a> ` })} <!-- //? --> <!-- //? --> ${renderComponent($$result2, "Fade", Fade, { "client:visible": true, "delay": 800, "client:component-hydration": "visible", "client:component-path": "react-awesome-reveal", "client:component-export": "Fade" }, { "default": ($$result3) => renderTemplate` <a class="grid grid-cols-4 grid-flow-col bg-zinc-900 py-5 rounded mb-5 border border-zinc-700  hover:animate-pulse" href="./productos/adicionales"> <div class="text-center"> <i class="text-3xl fas fa-stream"></i> </div> <h1 class="text-left col-span-2 text-lg pt-1">
+Productos adicionales
+</h1> <p class="pt-2 text-right"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 mx-auto animate-pulse"> <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path> </svg> </p> </a> ` })}</div> </div> ` })}`;
+}, "/Users/israelwong/Documents/Desarrollo/aluvitec.mx/src/pages/productos/index.astro", void 0);
+
+const $$file = "/Users/israelwong/Documents/Desarrollo/aluvitec.mx/src/pages/productos/index.astro";
+const $$url = "/productos";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+    __proto__: null,
+    default: $$Index,
+    file: $$file,
+    url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

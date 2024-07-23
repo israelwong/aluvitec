@@ -1,0 +1,178 @@
+---
+import Layout from "../components/Layout.astro";
+import Hero from "../components/Hero.astro"
+import LogosProveedores from "../components/logos_proveedores.astro";
+import Productos from "../components/Productos.astro";
+import { Fade, Zoom } from "react-awesome-reveal";
+
+---
+
+<Layout title = 'Bienvenido' descriptions="Distribuidores de aluminio, cristal y herrajes de alta calidad">
+	
+		<div class="mb-10">
+			<Fade client:visible>
+				<Hero/>
+			</Fade>
+		</div>
+
+		<div class="mb-10">
+			<Fade client:visible>
+				<LogosProveedores />
+			</Fade>
+		</div>
+
+		<!-- //! ACCESO DIRECTO A PRODUCTOS -->
+		<div>
+			<Fade client:visible>
+				<Productos />
+			</Fade>
+
+			<div class="text-center">
+				<i class="fas fa-angle-down text-4xl animate-bounce text-zinc-600"></i>
+				</div>
+		</div>
+		
+		<!-- //! PORQUE NOSOTROS -->
+
+		<div class="mx-auto text-center pb-5">
+			
+			<h2 class="font-Bebas-Neue text-zinc-500 text-6xl py-6">¿Porqué nosotros?</h2>
+			
+			<div class="border-[.5px] border-solid border-zinc-600 mb-5"></div>
+
+			<div class="
+			bg-gradient-to-b from-zinc-950 via-blue-950 to-zinc-950 py-12
+			sm:bg-gradient-to-r from-zinc-950 via-blue-950 to-zinc-950 py-12
+			">
+				
+			<Fade client:visible>
+				<div class="
+				mx-auto 
+				grid md:grid-cols-5 
+				text-center">
+
+					<div class="m-auto text-center py-4">
+						<img src="./images/ico_asesoria.svg" class="h-8 md:h-14 mx-auto"/>
+						<p class="py-4 px-24 text-lg md:text-xl">
+							Asesoría personalizada
+						</p>
+					</div>
+			
+					<div class="m-auto text-center py-4">
+						<img src="./images/ico_procesos.svg" class="h-8 md:h-14 mx-auto"/>
+						<p class="py-4 px-16 text-lg md:text-xl">
+							Procesos controlados y eficientes
+						</p>
+					</div>
+				
+					<div class="m-auto text-center py-4">
+						<img src="./images/ico_garantia.svg" class="h-8 md:h-14 mx-auto"/>
+						<p class="py-4 px-16 text-lg md:text-xl">
+							Garantía de calidad en materiales
+						</p>
+					</div>
+		
+					<div class="m-auto text-center py-4">
+						<img src="./images/ico_transporte.svg" class="h-8 md:h-14 mx-auto"/>
+						<p class="py-4 px-16 text-lg md:text-xl">
+							Entregas a hasta tu domicilio
+						</p>
+					</div>
+				
+					<div class="m-auto text-center py-4">
+						<img src="./images/ico_soluciones.svg" class="h-8 md:h-14 mx-auto"/>
+						<p class="py-4 px-16 text-lg md:text-xl">
+							Soluciones integrales a la medida
+						</p>
+					</div>
+
+				</div>
+			</Fade>
+			</div>
+
+			<div class="border-[.5px] border-solid border-zinc-600 mt-5"></div>
+		</div>
+
+		<div class="container grid grid-cols-1 mx-auto p-14">
+
+			<!-- //? -->
+			<!-- //? -->
+
+			<Fade client:visible>
+
+				<div class="mb-0 md:flex md:mb-10">
+					<div>
+						<img src="./images/img_abasto.png" alt="Soluciones de abasto de material" class="md:max-w-max border-2 border-solid border-zinc-500 p-2"/>
+					</div>
+					<div class="py-5 md:px-5 text-center md:text-left">
+						<h3 class="font-Bebas-Neue text-3xl md:text-8xl">
+							Soluciones de abasto
+						</h3>
+						<p class="text-zinc-500 text-lg md:text-5xl">
+							Si no lo tenemos, te lo conseguimos lo más pronto posible
+						</p>
+					</div>
+					
+				</div>
+				
+				<div class="text-center mb-5 md:pb-10 block md:hidden"> <!-- //! arrow -->
+					<i class="fas fa-angle-down text-3xl animate-pulse text-zinc-600"></i>
+				</div>
+			
+			</Fade>
+
+			<!-- //? -->
+			<!-- //? -->
+			
+			<!-- //? -->
+			<!-- //? -->
+
+			<Fade client:visible>
+				<div class="mb-0 md:flex md:mb-10">
+					<div>
+						<img src="./images/img_logistica.png" alt="Soluciones en logistica" class="md:max-w-max border-2 border-solid border-zinc-500 p-2"/>
+					</div>
+					<div class="py-5 md:px-5 text-center md:text-left">
+						<h3 class="font-Bebas-Neue text-3xl md:text-8xl">
+							Logistica impecable
+						</h3>
+						<p class="text-zinc-500 text-lg md:text-5xl">
+							Planeamos la entrega de tu pedido bajo ruta programada o exprés
+						</p>
+					</div>
+					
+				</div>
+				
+				<div class="text-center mb-5 md:pb-10 block md:hidden"> <!-- //! arrow -->
+					<i class="fas fa-angle-down text-4xl animate-pulse text-zinc-600"></i>
+				</div>
+			</Fade>
+
+			<!-- //? -->
+			<!-- //? -->
+			<!-- //? -->
+			<!-- //? -->
+			<Fade client:visible>
+			<div class="mb-0 md:flex md:mb-10">
+				<div class="">
+					<img src="./images/img_personal.png" alt="Personal capacitado" class="md:max-w-max border-2 border-solid border-zinc-500 p-2"/>
+				</div>
+				<div class="py-5 md:px-5 text-center md:text-left">
+					<h3 class="font-Bebas-Neue text-4xl md:text-8xl">
+						Personal capacitado
+					</h3>
+					<p class="text-zinc-500 text-lg md:text-5xl">
+						Todos los colaboradores en nuestro equipo están capacitados
+					</p>
+				</div>
+						
+			</div>
+			</Fade>
+
+			<!-- //? -->
+			<!-- //? -->
+
+		</div>
+
+
+</Layout>
