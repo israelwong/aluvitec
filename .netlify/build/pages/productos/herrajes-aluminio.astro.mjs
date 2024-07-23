@@ -4,7 +4,7 @@ import 'kleur/colors';
 import 'html-escaper';
 import { $ as $$Layout } from '../../chunks/Layout_CrLGOSeF.mjs';
 import { $ as $$BtnMostrarProductos } from '../../chunks/btn_mostrar_productos_DLat-lpJ.mjs';
-import { $ as $$BtnCotizar } from '../../chunks/btn_cotizar_aJywLNHX.mjs';
+import { $ as $$BtnCotizar } from '../../chunks/btn_cotizar_KKicCW_b.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$HerrajesAluminio = createComponent(($$result, $$props, $$slots) => {

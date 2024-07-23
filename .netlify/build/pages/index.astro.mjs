@@ -1,5 +1,5 @@
 /* empty css                                      */
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderComponent } from '../chunks/astro/server_m02BKbkd.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as addAttribute, d as renderComponent } from '../chunks/astro/server_m02BKbkd.mjs';
 import 'kleur/colors';
 import 'html-escaper';
 import { $ as $$Layout } from '../chunks/Layout_CrLGOSeF.mjs';
@@ -9,9 +9,20 @@ import { Fade } from 'react-awesome-reveal';
 export { renderers } from '../renderers.mjs';
 
 const $$Contactar = createComponent(($$result, $$props, $$slots) => {
+  const numeros = [
+    5559360365,
+    5559363562,
+    5559362789,
+    5563593952
+  ];
+  function random() {
+    let telefono = numeros[Math.floor(Math.random() * numeros.length)];
+    console.log(telefono);
+    return `tel:${telefono}`;
+  }
   return renderTemplate`${maybeRenderHead()}<div class="text-center pb-10 space-x-4 grid grid-cols-2 w-fit m-auto"> <a href="https://api.whatsapp.com/send?phone=525563593952&text=Hola! Estoy en su pagina web y me interesa obtener más información sobre sus productos." target="_blank" class="bg-green-700 text-white rounded-full py-3 px-4 border-2 border-green-600">
 Manda mensaje
-<i class="fab fa-whatsapp"></i> </a> <a href="tel:59360365" target="_self" class="bg-yellow-700 text-white rounded-full py-3 px-4 border-2 border-yellow-500">
+<i class="fab fa-whatsapp"></i> </a> <a${addAttribute(random(), "href")} target="_self" class="bg-yellow-700 text-white rounded-full py-3 px-4 border-2 border-yellow-500">
 Llama ahora
 <i class="fas fa-phone-alt"></i> </a> </div>`;
 }, "/Users/israelwong/Documents/Desarrollo/aluvitec.mx/src/components/Contactar.astro", void 0);
